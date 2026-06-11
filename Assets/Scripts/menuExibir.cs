@@ -1,26 +1,43 @@
-using Unity.XR.CoreUtils.Datums;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class menuExibir : MonoBehaviour
+public class MenuExibir : MonoBehaviour
 {
     public Transform jogador;
-    public float distance = 3.0f;
+    public float distance = 3f;
     public GameObject menu;
     public InputActionProperty exibirBotao;
 
-   void Update()
+    private void OnEnable()
+    {
+        exibirBotao.action.Enable();
+    }
+
+    private void OnDisable()
+    {
+        exibirBotao.action.Disable();
+    }
+
+    void Update()
     {
         if (exibirBotao.action.WasPressedThisFrame())
         {
-            menu.SetActive(value: !menu.activeSelf);
-            menu.transform.position = jogador.position + new Vector3(x: jogador.forward.x, y: 0, z: jogador.forward.z).normalized;
+            menu.SetActive(!menu.activeSelf);
+
+            menu.transform.position =
+                jogador.position +
+                new Vector3(jogador.forward.x, 0, jogador.forward.z).normalized * distance;
         }
 
-     menu.transform.LookAt(worldPosition:new Vector3(x: jogador.position.x, y: menu.transform.position.y,z: jogador.position.z));
-        menu.transform.forward *= -1;
+        if (menu.activeSelf)
+        {
+            menu.transform.LookAt(
+                new Vector3(
+                    jogador.position.x,
+                    menu.transform.position.y,
+                    jogador.position.z));
+
+            menu.transform.forward *= -1;
+        }
     }
-
-
 }
-
