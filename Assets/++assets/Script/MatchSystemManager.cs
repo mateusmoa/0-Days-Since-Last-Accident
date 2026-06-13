@@ -34,8 +34,14 @@ public class MatchSystemManager : MonoBehaviour
 
     private void SetEntityColors()
     {
-        Shuffle(colorMaterials);
+        if (colorMaterials.Count < _matchEntities.Count)
+        {
+            Debug.LogError($"Faltam cores: {_matchEntities.Count} cabos, " +
+                        $"mas só {colorMaterials.Count} materiais na lista.", this);
+            return;
+        }
 
+        Shuffle(colorMaterials);
         for (int i = 0; i < _matchEntities.Count; i++)
             _matchEntities[i].SetColor(colorMaterials[i]);
     }
