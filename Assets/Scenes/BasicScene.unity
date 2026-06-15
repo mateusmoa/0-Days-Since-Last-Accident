@@ -1698,6 +1698,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1991236394}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1991236403}
   m_SourcePrefab: {fileID: 100100000, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
 --- !u!1001 &184122168
 PrefabInstance:
@@ -2722,6 +2725,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1249053950}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1249053959}
   m_SourcePrefab: {fileID: 100100000, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
 --- !u!1001 &293810390
 PrefabInstance:
@@ -3651,6 +3657,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
   m_PrefabInstance: {fileID: 1004499921}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &363108086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363108076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09efd13e06441a54d8b02e1b3c36f672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WireSafetyCheck
+  blockGrabWithoutGlove: 0
+  feedbackCooldown: 0.5
+  hapticAmplitude: 0.8
+  hapticDuration: 0.25
+  shockSound: {fileID: 8300000, guid: b438ebe7f5c802147a5c0806d404ea75, type: 3}
+  audioSource: {fileID: 329920706}
+  useCameraShake: 1
+  shakeDuration: 0.15
+  shakeMagnitude: 0.03
+  onUnsafeContact:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &389437888
 GameObject:
   m_ObjectHideFlags: 0
@@ -6065,6 +6095,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2093815816}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2093815825}
   m_SourcePrefab: {fileID: 100100000, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
 --- !u!1 &709073106
 GameObject:
@@ -8249,6 +8282,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 363108077}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 363108086}
   m_SourcePrefab: {fileID: 100100000, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
 --- !u!1001 &1006215320
 PrefabInstance:
@@ -10955,6 +10991,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
   m_PrefabInstance: {fileID: 292836539}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1249053959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249053949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09efd13e06441a54d8b02e1b3c36f672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WireSafetyCheck
+  blockGrabWithoutGlove: 0
+  feedbackCooldown: 0.5
+  hapticAmplitude: 0.8
+  hapticDuration: 0.25
+  shockSound: {fileID: 8300000, guid: b438ebe7f5c802147a5c0806d404ea75, type: 3}
+  audioSource: {fileID: 329920706}
+  useCameraShake: 1
+  shakeDuration: 0.15
+  shakeMagnitude: 0.03
+  onUnsafeContact:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &1252185811
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17429,6 +17489,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
   m_PrefabInstance: {fileID: 178480557}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1991236403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991236393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09efd13e06441a54d8b02e1b3c36f672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WireSafetyCheck
+  blockGrabWithoutGlove: 0
+  feedbackCooldown: 0.5
+  hapticAmplitude: 0.8
+  hapticDuration: 0.25
+  shockSound: {fileID: 8300000, guid: b438ebe7f5c802147a5c0806d404ea75, type: 3}
+  audioSource: {fileID: 329920706}
+  useCameraShake: 1
+  shakeDuration: 0.15
+  shakeMagnitude: 0.03
+  onUnsafeContact:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1998177941
 GameObject:
   m_ObjectHideFlags: 0
@@ -18512,6 +18596,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b6b928fd71079245873ea16456414d6, type: 3}
   m_PrefabInstance: {fileID: 703955831}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2093815825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093815815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09efd13e06441a54d8b02e1b3c36f672, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WireSafetyCheck
+  blockGrabWithoutGlove: 0
+  feedbackCooldown: 0.5
+  hapticAmplitude: 0.8
+  hapticDuration: 0.25
+  shockSound: {fileID: 8300000, guid: b438ebe7f5c802147a5c0806d404ea75, type: 3}
+  audioSource: {fileID: 329920706}
+  useCameraShake: 1
+  shakeDuration: 0.15
+  shakeMagnitude: 0.03
+  onUnsafeContact:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &2108504671
 PrefabInstance:
   m_ObjectHideFlags: 0
