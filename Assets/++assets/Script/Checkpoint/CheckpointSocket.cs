@@ -5,7 +5,8 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors; // XRI 3.x. No XRI 2.x, AP
 [RequireComponent(typeof(XRSocketInteractor))]
 public class CheckpointSocket : MonoBehaviour
 {
-    [SerializeField] private Transform respawnPoint; // ponto no chão na frente do relógio
+    [SerializeField] private Transform respawnPoint;   // ponto no chão na frente do relógio
+    [SerializeField] private int diasPorEstaFase = 1;  // quantos dias este ponto adiciona (0 = não conta)
 
     private XRSocketInteractor socket;
 
@@ -16,6 +17,11 @@ public class CheckpointSocket : MonoBehaviour
     private void OnCartaoInserido(SelectEnterEventArgs args)
     {
         CheckpointManager.Instance.SetCheckpoint(respawnPoint);
+
+        // passar de fase: só conta na PRIMEIRA vez que este ponto é batido
+        if (ContadorDias.Instance != null)
+            ContadorDias.Instance.PassarFase(this, diasPorEstaFase);
+
         // aqui dá pra tocar um "bip de ponto batido", acender luz verde, etc.
     }
 }

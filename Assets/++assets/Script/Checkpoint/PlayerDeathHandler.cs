@@ -21,6 +21,10 @@ public class PlayerDeathHandler : MonoBehaviour
     {
         if (morrendo) return;
         morrendo = true;
+
+        // o acidente aconteceu: zera o "dias desde o último acidente"
+        if (ContadorDias.Instance != null) ContadorDias.Instance.RegistrarAcidente();
+
         StartCoroutine(SequenciaMorte());
     }
 
