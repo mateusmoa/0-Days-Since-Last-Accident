@@ -14980,50 +14980,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 673131345}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!1 &1392647895
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1392647896}
-  - component: {fileID: 1392647897}
-  m_Layer: 0
-  m_Name: Sair-Interact
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1392647896
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392647895}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1850390252}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1392647897
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1392647895}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 750eba5147774be49922e899a5bf57da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &1400628182
 GameObject:
   m_ObjectHideFlags: 0
@@ -15168,50 +15124,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400628182}
   m_CullTransparentMesh: 1
---- !u!1 &1406850789
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1406850790}
-  - component: {fileID: 1406850791}
-  m_Layer: 0
-  m_Name: Sair-Interact
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1406850790
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406850789}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1535200990}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1406850791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406850789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 750eba5147774be49922e899a5bf57da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
 --- !u!1 &1408117113
 GameObject:
   m_ObjectHideFlags: 0
@@ -16468,9 +16380,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5756151414267657547, guid: 860e1de59aab3fd4b880688c01ed3b70, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1156200273}
-    - targetCorrespondingSourceObject: {fileID: 5756151414267657547, guid: 860e1de59aab3fd4b880688c01ed3b70, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1406850790}
     - targetCorrespondingSourceObject: {fileID: 1254904514761681469, guid: 860e1de59aab3fd4b880688c01ed3b70, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1236453951}
@@ -18659,9 +18568,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
+      propertyPath: m_Looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_VideoClip
       value: 
-      objectReference: {fileID: 32900000, guid: 597e3ae2e01aed1488c14e4b05610134, type: 3}
+      objectReference: {fileID: 32900000, guid: 3c15a0c051a81784b960323c0e572e49, type: 3}
     - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_TimeUpdateMode
       value: 2
@@ -18676,23 +18589,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_ControlledAudioTrackCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_DirectAudioMutes.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_DirectAudioVolumes.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_EnabledAudioTracks.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: m_TargetAudioSources.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4415745982179208543, guid: dc067c577ec1b854684d789b6e727cc0, type: 3}
       propertyPath: 'm_DirectAudioVolumes.Array.data[0]'
@@ -20461,9 +20374,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5756151414267657547, guid: 860e1de59aab3fd4b880688c01ed3b70, type: 3}
       insertIndex: -1
       addedObject: {fileID: 421248676}
-    - targetCorrespondingSourceObject: {fileID: 5756151414267657547, guid: 860e1de59aab3fd4b880688c01ed3b70, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1392647896}
     - targetCorrespondingSourceObject: {fileID: 1254904514761681469, guid: 860e1de59aab3fd4b880688c01ed3b70, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2075031159}
